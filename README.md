@@ -4,6 +4,7 @@ image-share
 Image share app, a standalone app to share image on facebook.
 
 Prerequisites:
+
 You need these to be able to run this app:
 <ul>
   <li>Node.js and npm (I don't think I have to put extensive explanation about how to do it here).</li>
