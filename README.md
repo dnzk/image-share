@@ -7,7 +7,7 @@ Prerequisites:
 
 You need these to be able to run this app:
 <ul>
-  <li>Node.js and npm (I don't think I have to put extensive explanation about how to do it here).</li>
+  <li>Node.js and npm.</li>
   <li>Grunt-CLI (npm install -g grunt-cli)</li>
   <li>Bower (npm install -g bower)</li>
 </ul>
