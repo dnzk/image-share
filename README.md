@@ -15,6 +15,7 @@ You need these to be able to run this app:
 Once you have those installed, assuming you've cloned this project, now install the dependencies from the command line:
 
   bower install
+  
   npm install
 
 To run the server that serves the app:
