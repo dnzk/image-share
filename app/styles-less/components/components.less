@@ -1,0 +1,24 @@
+.generic-button {
+  padding: .5em;
+  border-radius: 5px;
+  background-color: @button-color-1;
+  color: lighten(@main, 10%);
+  font-weight: 700;
+  border: none;
+  border-bottom: 1px solid darken(@button-color-1, 20%);
+  &:hover {
+    color: darken(@main, 10%);
+  }
+}
+
+.generic-button.log-in {
+  margin-top: 1em;
+}
+
+.generic-button.log-out.main-page {
+  float: right;
+}
+
+.soft-emphasize {
+  border-bottom: 1px dotted;
+}

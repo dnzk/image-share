@@ -1,0 +1,31 @@
+<header class="image-sharing main-header">
+  <section class="main-header-content-container">
+    <div class="profile-picture-container">
+      <img ng-src="{{ profilePicUrl }}" alt="profile picture" />
+    </div>
+    <div class="profile-name"><span class="soft-emphasize" ng-if="profileFullName">{{ profileFullName }}</span></div>
+    <button class="generic-button log-out main-page" ng-click="logoutFacebook()">Log Out</button>
+  </section>
+</header>
+<section class="image-sharing body-container">
+  <div ng-if="shared" class="notification-bubble">the photo has been shared to your facebook page</div>
+  <div class="body-content left-arrow">
+    <span ng-click="prev()" class="arrow"><i class="fa fa-chevron-left"></i></span>
+  </div>
+  <div class="body-content main-content">
+    <div class="single-image-group-container" ng-repeat="photo in photoList">
+      <div class="image-container">
+        <img class="the-image" ng-src="{{ photo.source }}" />
+        <div class="share-button-container">
+          <div class="complimentary-text"><span class="soft-emphasize">Share on:</span></div>
+          <div class="utility-button">
+            <span ng-click="share(photo)"><i class="fa fa-facebook-square"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="body-content right-arrow">
+    <span ng-click="next()" class="arrow"><i class="fa fa-chevron-right"></i></span>
+  </div>
+</section>

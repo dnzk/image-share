@@ -1,0 +1,171 @@
+.image-sharing.main-header {
+  width: 100%;
+  height: 4em;
+  background-color: @main;
+  position: fixed;
+  z-index: 100;
+  padding: 1em 0;
+  border-bottom: 2px solid darken(@main, 20%);
+  .main-header-content-container {
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 1200px;
+    @media screen and (max-width: 1284px) {
+      width: 90%;
+    }
+    .profile-picture-container {
+      width: 3em;
+      height: 3em;
+      float: left;
+      margin-right: .5em;
+      border: 1px solid darken(@main, 15%);
+    }
+    .profile-name {
+      margin-top: .5em;
+      color: darken(@main, 30%);
+      font-size: .9em;
+      font-weight: 700;
+    }
+  }
+}
+
+.image-sharing.body-container {
+  padding-top: 6em;
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 1200px;
+  position: relative;
+  @media screen and (max-width: 1284px) {
+    width: 90%;
+  }
+  .body-content.main-content {
+    width: 90%;
+    height: 1em;
+    margin: 2em auto 0 auto;
+    @media screen and (max-width: 600px) {
+      width: 70%;
+    }
+    .single-image-group-container {
+      width: 32%;
+      float: left;
+      padding: .4em;
+      min-height: 500px;
+      max-height: 500px;
+      margin-bottom: 2em;
+      overflow: hidden;
+      @media screen and (max-width: 1200px) {
+        width: 30%;
+      }
+      @media screen and (max-width: 810px) {
+        width: 45%;
+        margin-bottom: 1em;
+        padding: .2em;
+      }
+      @media screen and (max-width: 640px) {
+        min-height: 400px;
+        margin-bottom: 0;
+        padding: .1em;
+      }
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        min-height: 0;
+        margin-bottom: 0;
+      }
+      .image-container {
+        position: relative;
+        .the-image {
+          width: 100%;
+        }
+        .share-button-container {
+          width: 100%;
+          height: 2em;
+          background-color: white;
+          opacity: .7;
+          position: absolute;
+          top: 0;
+          display: none;
+          border-bottom: 1px dashed darken(@main, 40%);
+          .complimentary-text {
+            display: inline-block;
+            margin: .3em 0 0 .3em;
+            font-size: .7em;
+          }
+          .utility-button {
+            opacity: 1;
+            font-size: 1.4em;
+            color: @logo-color;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: .1em .3em 0 0;
+            cursor: pointer;
+          }
+        }
+      }
+      .image-container:hover {
+        .share-button-container {
+          display: block;
+        }
+      }
+    }
+  }
+  .body-content.left-arrow {
+    position: fixed;
+    left: 12em;
+    top: 9em;
+    z-index: 10;
+    @media screen and (max-width: 1701px) {
+      left: 8em;
+    }
+    @media screen and (max-width: 1454px) {
+      left: 2em;
+    }
+    @media screen and (max-width: 800px) {
+      left: 0;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: .7em;
+      top: 12em;
+    }
+  }
+  .body-content.right-arrow {
+    position: fixed;
+    right: 12em;
+    top: 9em;
+    z-index: 10;
+    @media screen and (max-width: 1701px) {
+      right: 8em;
+    }
+    @media screen and (max-width: 1454px) {
+      right: 2em;
+    }
+    @media screen and (max-width: 600px) {
+      right: 0;
+      font-size: .7em;
+      top: 12em;
+    }
+  }
+  .notification-bubble {
+    width: 250px;
+    height: 50px;
+    background-color: darken(@main, 20%);
+    position: fixed;
+    bottom: 20px;
+    z-index: 10;
+    padding: 20px;
+    right: 20px;
+    color: lighten(@main, 5%);
+    border-radius: 10px;
+    font-weight: 700;
+    border-bottom: 1.5px solid darken(@main, 30%);
+  }
+}
+
+.arrow {
+  font-size: 4em;
+  color: @main;
+  cursor: pointer;
+  &:hover {
+    color: @comp-1;
+  }
+}
