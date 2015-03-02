@@ -14,12 +14,15 @@ You need these to be able to run this app:
 
 Once you have those installed, assuming you've cloned this project, now install the dependencies from the command line:
 
-  bower install
-  
-  npm install
+<ul>
+  <li>npm install</li>
+  <li>bower install</li>
+</ul>
 
 To run the server that serves the app:
 
-  grunt
+<ul>
+  <li>grunt</li>
+</ul>
   
 <i>Yes, please have yourself located in the app's directory before you run the installation and the app runner itself.</i>
