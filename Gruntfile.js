@@ -57,12 +57,5 @@ module.exports = function(grunt) {
   dependencies.forEach(function(current) {
     grunt.loadNpmTasks(current);
   });
-  grunt.registerTask('default', ['connect:livereload', 'open:dev', 'watch']);
-  // grunt.registerTask('default', function() {
-    // grunt.task.run([
-      // 'connect:livereload',
-      // 'open:dev',
-      // 'watch:less'
-    // ]);
-  // });
+  grunt.registerTask('default', ['connect:livereload', 'less:server', 'open:dev', 'watch']);
 };
