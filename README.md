@@ -26,3 +26,5 @@ To run the server that serves the app:
 </ul>
   
 <i>Yes, please have yourself located in the app's directory before you run the installation and the app runner itself.</i>
+
+<i>Update March 3rd, 2015: There's a possibility of grunt not being able to continue with this message: <strong>Waiting...Fatal error: Port 35729 is already in use by another process.</strong> (or something like that). Please refer to <a href="https://github.com/toddmotto/fireshell/issues/39">this link</a></i>
